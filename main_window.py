@@ -25,6 +25,7 @@ class EidMubarakInterface(QWidget):
         pink = QColor(254, 204, 205)
         light_pink = QColor(255, 238, 236)
         white = QColor(255, 255, 255)
+
         # Set up gradient background
         self.gradient = QLinearGradient(0, 0, 0, screen_geometry.height())
         self.gradient.setColorAt(0.0, pink)  # Start color

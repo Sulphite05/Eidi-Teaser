@@ -1,6 +1,6 @@
 # Eidi Teaser: A Playful Game for Teasing Greedy People
 
-Eidi Teaser is a playful PyQt5 application designed to tease people who haven't given you Eidi (gift money) during Eid celebrations. It features a vibrant and interactive interface where users can choose to either send Eidi or play with a mischievous "No, I'm Greedy" button that moves around the screen.
+Eidi Teaser is a playful PyQt5 application designed to tease people who haven't given you Eidi (gift money) during Eid celebrations. It features a vibrant and interactive interface where users can choose to either send Eidi or play with a mischievous "No, I'm Greedy" button that moves around the screen and teases the player as they delay.
 
 ## Features
 
