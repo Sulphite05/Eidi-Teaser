@@ -8,7 +8,7 @@ class PlushyButton(QPushButton):
                            "    border: 2px solid #FF6F61;"  # Pink border
                            "    border-radius: 25px;"  # Rounded corners
                            "    padding: 10px 20px;"  # Padding inside the button
-                           "    font-size: 24px;"  # Font size
+                           "    font-size: 30px;"  # Font size
                            "    background-color: #ff6f61;"  # Pink background color
                            "    color: white;"  # Text color
                            "}"
