@@ -121,11 +121,6 @@ class EidMubarakInterface(QWidget):
             self.moveGreedyButton()
         return super().eventFilter(obj, event)
 
-    def paintEvent(self, event):
-        painter = QPainter(self)
-        painter.setBrush(self.gradient)
-        painter.drawRect(self.rect())
-
     def nagUser(self):
         nag_labels = ["Come on now, don't be grumpy!", "Just rupees Rs. 5000 👉👈",
                       "Click Yes, pretty please!", "You'll never win :))"]
