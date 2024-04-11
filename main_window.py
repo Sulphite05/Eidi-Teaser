@@ -122,7 +122,7 @@ class EidMubarakInterface(QWidget):
         return super().eventFilter(obj, event)
 
     def nagUser(self):
-        nag_labels = ["Come on now, don't be grumpy!", "Just rupees Rs. 5000 👉👈",
+        nag_labels = ["Come on now, don't be grumpy!", "Just 5000 rupees 👉👈",
                       "Click Yes, pretty please!", "You'll never win :))"]
         if not hasattr(self, 'nag_index'):
             self.nag_index = 0  # Initialize the index if not exists
@@ -132,3 +132,8 @@ class EidMubarakInterface(QWidget):
         self.nag_index = (self.nag_index + 1) % len(nag_labels)
         # Hide the old nag label after 3 seconds
         QTimer.singleShot(3000, lambda: self.nag_label.hide())
+
+    def paintEvent(self, event):
+        painter = QPainter(self)
+        painter.setBrush(self.gradient)
+        painter.drawRect(self.rect())
