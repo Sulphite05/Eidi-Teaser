@@ -22,14 +22,16 @@ class EidMubarakInterface(QWidget):
 
         # Get screen geometry
         screen_geometry = QGuiApplication.primaryScreen().geometry()
-
+        pink = QColor(254, 204, 205)
+        light_pink = QColor(255, 238, 236)
+        white = QColor(255, 255, 255)
         # Set up gradient background
         self.gradient = QLinearGradient(0, 0, 0, screen_geometry.height())
-        self.gradient.setColorAt(0.0, QColor(254, 204, 205))  # Start color
-        self.gradient.setColorAt(0.25, QColor(255, 238, 236))  # Color at 25% position
-        self.gradient.setColorAt(0.5, QColor(255, 255, 255))  # Color at 50% position
-        self.gradient.setColorAt(0.75, QColor(255, 238, 236))  # Color at 75% position
-        self.gradient.setColorAt(1.0, QColor(254, 204, 205))  # End color
+        self.gradient.setColorAt(0.0, pink)  # Start color
+        self.gradient.setColorAt(0.25, light_pink)  # Color at 25% position
+        self.gradient.setColorAt(0.5, white)  # Color at 50% position
+        self.gradient.setColorAt(0.75, light_pink)  # Color at 75% position
+        self.gradient.setColorAt(1.0, pink)  # End color
 
         # Set up title label
         self.title_label = QLabel('Eid Mubarak, lovely people!', self)
