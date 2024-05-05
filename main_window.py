@@ -16,9 +16,9 @@ class EidMubarakInterface(QWidget):
     def initUI(self):
         self.setWindowTitle('Eidi Teaser')
         self.setWindowState(Qt.WindowFullScreen)  # Set window to full screen
-
-        font_title = QFont("Comic Sans MS", 64, QFont.Bold)  # Larger and bolder font for title
-        font = QFont("Comic Sans MS", 48, QFont.Bold)  # Larger and bolder font
+        font = "Comic Sans MS"
+        font_title = QFont(font, 64, QFont.Bold)  # Larger and bolder font for title
+        font = QFont(font, 48, QFont.Bold)  # Larger and bolder font
 
         # Get screen geometry
         screen_geometry = QGuiApplication.primaryScreen().geometry()
