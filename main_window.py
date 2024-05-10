@@ -125,7 +125,7 @@ class EidMubarakInterface(QWidget):
 
     def nagUser(self):
         nag_labels = ["Come on now, don't be grumpy!", "Just 5000 rupees 👉👈",
-                      "Click Yes, pretty please!", "You'll never win :))"]
+                      "Click Yes, pretty please!", "You'll never win :))", "Is that too much to ask?"]
         if not hasattr(self, 'nag_index'):
             self.nag_index = 0  # Initialize the index if not exists
         self.nag_label.setText(nag_labels[self.nag_index])
